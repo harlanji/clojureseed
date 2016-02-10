@@ -1,0 +1,9 @@
+// not working yet
+
+{"id": "mesos-dns",
+ "env": {"DEVELOP": "/develop"},
+ "cmd": "sudo $DEVELOP/mesos-dns -config=$DEVELOP/marathon-apps/mesos-dns-config.json",
+ "cpus": 0.1,
+ "mem": 128,
+ "instances": 1,
+ "constraints": [["hostname", "CLUSTER", "192.168.33.33 "]]}

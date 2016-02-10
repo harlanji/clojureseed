@@ -1,0 +1,7 @@
+{"id": "check-env",
+ "env": {"DEVELOP_DIR": "/develop"},
+ "fetch": [{"uri": "file:///develop/project.clj"}],
+ "ports": [0],
+ "cmd": "watch \"echo $PORT && java -version && ls -la $DEVELOP_DIR && ls -la .\"",
+ "cpus": 0.1,
+ "mem": 16}

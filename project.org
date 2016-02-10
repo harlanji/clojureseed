@@ -1,0 +1,68 @@
+#+TITLE: Clojure Stack Project Organizer
+
+* Development Environment
+** TODO Create Vagrantfile
+** TODO Setup Vagrant and Marathon via Ansible
+
+
+* iOS
+** TODO Verify X Code build
+** TODO Create streaming client component
+** TODO Look into CocoaPods
+
+As Jordan Z About this.
+
+* Web
+** TODO Create re-frame Project
+** DONE Create streaming client component
+
+
+* Core
+** TODO Make Pub/Sub Service
+** TODO Make Materialized KV Service (Aggregate Object)
+** WIP Integrate component
+
+
+
+Added dependency
+
+
+*** TODO componentize subsystems
+**** DONE web-client
+
+fully complete example of modules. dev profile injects a :dev system.
+
+**** TODO web-backend
+
+
+
+**** DONE visualizer
+
+
+this uses a regular system-map pattern
+
+**** DONE ios-client
+
+runs, may or may not have shared code use
+
+
+**** TODO pubsub-service
+
+this is using lein-ring, should switch to pure -main entry?
+
+**** WIP core
+
+core is using the defmulti pattern
+
+
+** TODO Expand upon macro pattern for (react-to :command [m])
+
+Created the defaction, event, upon components
+
+These can stay private, initially offering just the defmulti stuff.
+
+** TODO Make remote atom, channel, promise serializers
+
+
+* Fun
+** Create Dataflow DAG visualizer
